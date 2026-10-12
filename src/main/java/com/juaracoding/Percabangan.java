@@ -38,37 +38,37 @@ public class Percabangan {
                 int ongkosKirim = 0;
                 String namaKota = "";
 
-                if (pilihanKota == 1) {
-                    namaKota = "Jakarta";
-                    ongkosKirim = 50000;
-                } else if (pilihanKota == 2) {
-                    namaKota = "Bandung";
-                    ongkosKirim = 150000;
-                } else if (pilihanKota == 3) {
-                    namaKota = "Bogor";
-                    ongkosKirim = 100000;
-                } else {
-                    System.out.println("Pilihan tidak valid!");
-                    return;
-                }
-                // switch (pilihanKota) {
-                //     case 1 -> {
-                //         namaKota = "Jakarta";
-                //         ongkosKirim = 50000;
-                //     }
-                //     case 2 -> {
-                //         namaKota = "Bandung";
-                //         ongkosKirim = 150000;
-                //     }
-                //     case 3 -> {
-                //         namaKota = "Bogor";
-                //         ongkosKirim = 100000;
-                //     }
-                //     default -> {
-                //         System.out.println("Pilihan tidak valid!");
-                //         return;
-                //     }
+                // if (pilihanKota == 1) {
+                //     namaKota = "Jakarta";
+                //     ongkosKirim = 50000;
+                // } else if (pilihanKota == 2) {
+                //     namaKota = "Bandung";
+                //     ongkosKirim = 150000;
+                // } else if (pilihanKota == 3) {
+                //     namaKota = "Bogor";
+                //     ongkosKirim = 100000;
+                // } else {
+                //     System.out.println("Pilihan tidak valid!");
+                //     return;
                 // }
+                switch (pilihanKota) {
+                    case 1 -> {
+                        namaKota = "Jakarta";
+                        ongkosKirim = 50000;
+                    }
+                    case 2 -> {
+                        namaKota = "Bandung";
+                        ongkosKirim = 150000;
+                    }
+                    case 3 -> {
+                        namaKota = "Bogor";
+                        ongkosKirim = 100000;
+                    }
+                    default -> {
+                        System.out.println("Pilihan tidak valid!");
+                        return;
+                    }
+                }
 
                 System.out.println("\n=== HASIL TRANSAKSI ===");
                 System.out.println("Jumlah Pesanan : " + pesanan + " Unit");
